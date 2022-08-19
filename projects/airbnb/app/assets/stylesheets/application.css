@@ -1,0 +1,77 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face {
+  font-family: 'Cereal';
+  src: url('AirbnbCereal_W_Md.ttf');
+}
+@font-face {
+  font-family: 'Cereal-Light';
+  src: url('AirbnbCereal_W_Lt.ttf');
+}
+
+body {
+  font-family: 'Cereal';
+}
+
+.font-st {
+  font-size: 14px;
+  color: #222222;
+}
+
+.font-st2 {
+  font-size: 12px;
+}
+
+.font-var {
+  font-family: 'Cereal-Light';
+  color: #717171;
+}
+
+.font-var2 {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.l-h1 {
+  font-size: 15px;
+}
+
+.l-h2 {
+  font-size: 15px;
+  font-family: 'Cereal-Light';
+}
+
+.l-h3 {
+  font-size: 15px;
+  font-family: 'Cereal-Light';
+  color: #717171;
+}
+
+.l-h4 {
+  font-size: 15px;
+  font-family: 'Cereal-Light';
+  color: #717171;
+}
+
+.l-h5 {
+  font-size: 15px;
+  font-family: 'Cereal';
+}
+
+.l-night {
+  font-family: 'Cereal-Light';
+}

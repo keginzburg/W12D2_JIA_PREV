@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Airbnb</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%# Window image assets %>
+    <script type="text/javascript">
+      // General Icons
+      window.smallLogo = "<%= image_url('airbnb-a-icon-vector-logo.png') %>"
+      window.smallSearch = "<%= image_url('magnifier-glass-icon-vector.png') %>"
+      window.smallGithub = "<%= image_url('github-icon-vector.png') %>"
+      window.smallLinkedIn = "<%= image_url('linkedin-icon-vector.png') %>"
+      window.smallAngelList = "<%= image_url('angellist-icon-vector.png') %>"
+      window.smallMenu = "<%= image_url('menu-icon-vector.png') %>"
+      window.smallProfile = "<%= image_url('user-icon-vector.png') %>"
+      window.smallBear = "<%= image_url('bear-icon-vector.png') %>"
+      window.smallFilter = "<%= image_url('filter-icon-vector.png') %>"
+      window.smallStar = "<%= image_url('star-icon-vector.png') %>"
+
+
+
+      // Category Icons
+      window.lakefront = "<%= image_url('pond.png') %>"
+      window.desert = "<%= image_url('desert.png') %>"
+      window.beach = "<%= image_url('vacations.png') %>"
+      window.farm = "<%= image_url('barn.png') %>"
+      window.tropical = "<%= image_url('island.png') %>"
+      window.cave = "<%= image_url('cave.png') %>"
+      window.arctic = "<%= image_url('snowflake.png') %>"
+      window.cabin = "<%= image_url('cabin.png') %>"
+      window.castle = "<%= image_url('castle.png') %>"
+      window.dome = "<%= image_url('dome.png') %>"
+      window.boat = "<%= image_url('boat.png') %>"
+      window.windmill = "<%= image_url('windmill.png') %>"
+      window.camper = "<%= image_url('camper.png') %>"
+    </script>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>

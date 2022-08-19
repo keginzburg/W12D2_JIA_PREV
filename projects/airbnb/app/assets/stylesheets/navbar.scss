@@ -1,0 +1,172 @@
+$airbnb-color: rgb(255, 56, 92);
+
+.nav {
+  line-height: 80px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid rgba(211, 211, 211, 0.5);
+
+  .logo-box:hover {
+    cursor: pointer;
+  }
+
+  .logo-box {
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+    margin-right: 12vw;
+  
+    .small-logo {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .text-logo {
+      line-height: 40px;
+      width: fit-content;
+      height: 40px;
+      font-family: 'Cereal';
+      font-size: 22px;
+      color: $airbnb-color;
+    }
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+  
+    .search-bar:hover {
+      box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: 0.1s;
+    }
+
+    .search-bar {
+      border: 1px solid lightgray;
+      width: 352.2px;
+      height: 48px;
+      border-radius: 40px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      transition: 0.1s;
+
+      .divider {
+        border-left: 1px solid lightgray;
+        height: 22px;
+      }
+
+      .search-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        background-color: $airbnb-color;
+
+        .search-icon {
+            filter: invert(1);
+            color: white;
+            width: 16px;
+            height: 16px;
+          }
+      }
+    }
+  }
+
+  .menu-box {
+    margin-right: 5vw;
+
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .host-box {
+
+        button {
+          width: fit-content;
+          height: fit-content;
+          padding: 14px;
+          background-color: transparent;
+          border: none;
+          border-radius: 30px;
+          font-size: 15px;
+        }
+
+        button:hover {
+          background-color: rgba(211, 211, 211, 0.25);
+          cursor: pointer;
+        }
+      }
+
+      .per-link-box:hover {
+        background-color: rgba(211, 211, 211, 0.35);
+        cursor: pointer;
+      }
+
+      .per-link-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: gray;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+
+        img {
+          filter: invert(0.3);
+          width: 25px;
+          height: 25px;
+        }
+
+        .expand {
+          width: 29px;
+          height: 29px;
+        }
+      }
+
+      .dropdown-box:hover {
+        cursor: pointer;
+        
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+        transition: 0.1s;
+      }
+
+      .dropdown-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        filter: invert(0.3);
+
+        margin-left: 10px;
+        width: fit-content;
+        height: fit-content;
+        padding: 8px;
+
+        border: 1px solid rgba(211, 211, 211, 0.522);        
+        border-radius: 40px;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        transition: 0.1s;
+
+        .menu-icon {
+          width: 22px;
+          height: 22px;
+        }
+
+        .profile-icon {
+          margin-left: 10px;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
